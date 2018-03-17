@@ -1,0 +1,13 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+{% block submit_buttons_bottom %}
+{{ block.super }}
+
+{% if show_submit_button %}
+<div align="center" color="#ba2121">
+
+<input type="submit" title="Submit" value="{% trans 'SUBMIT THIS REPORT' %}" align="center" name="_save_submit" color="#ba2121"/>
+
+</div>
+{% endif %}
+{% endblock %}
